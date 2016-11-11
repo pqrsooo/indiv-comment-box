@@ -2,12 +2,14 @@
   "name": "indiv-comment-box",
   "version": "0.0.1",
   "private": true,
-  "license": "",
+  "license": "ISC",
   "description": "React comment box",
   "main": "server.js",
   "dependencies": {
     "body-parser": "^1.4.3",
-    "express": "^4.4.5"
+    "express": "^4.4.5",
+    "lokka": "^1.7.0",
+    "lokka-transport-http": "^1.6.1"
   },
   "devDependencies": {},
   "scripts": {
@@ -19,7 +21,7 @@
     "url": "https://github.com/reactjs/react-tutorial.git"
   },
   "author": "pirsquareff",
-  "engines" : {
-    "node" : "0.12.x"
+  "engines": {
+    "node": "0.12.x"
   }
 }
