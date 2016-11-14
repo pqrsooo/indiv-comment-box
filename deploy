@@ -1,0 +1,8 @@
+#!/bin/bash
+sudo ssh -vv graphql-client-c <<EOF
+ cd ~/indiv-comment-box
+ git pull
+ sudo npm install
+ pm2 restart all
+ exit
+EOF
