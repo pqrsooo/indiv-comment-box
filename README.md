@@ -1,4 +1,5 @@
 # React Comment Box
+[![Build Status](http://54.67.109.20:8080/buildStatus/icon?job=graphql-client)](http://54.67.109.20:8080/job/graphql-client/)
 
 This is the React comment box example from previous React tutorial
 
