@@ -1,4 +1,20 @@
 #!/bin/bash
+sudo ssh -vv -o StrictHostKeyChecking=no graphql-client-a <<EOF
+ cd ~/indiv-comment-box
+ git pull
+ sudo npm install
+ pm2 restart all
+ exit
+EOF
+
+sudo ssh -vv -o StrictHostKeyChecking=no graphql-client-b <<EOF
+ cd ~/indiv-comment-box
+ git pull
+ sudo npm install
+ pm2 restart all
+ exit
+EOF
+
 sudo ssh -vv -o StrictHostKeyChecking=no graphql-client-c <<EOF
  cd ~/indiv-comment-box
  git pull
