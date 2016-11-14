@@ -12,14 +12,14 @@ const headers = {
   'Accept': 'application/json'
 };
 const client = new Lokka({
-  transport: new Transport('http://localhost:8080', {
+  transport: new Transport('http://54.183.27.114:8080', {
     headers
   })
 });
 
 var COMMENTS_FILE = path.join(__dirname, 'comments.json');
 
-app.set('port', (process.env.PORT || 3000));
+app.set('port', (8080));
 
 app.use('/', express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
