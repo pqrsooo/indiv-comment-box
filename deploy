@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo ssh -vv graphql-client-c <<EOF
+sudo ssh -vv -o StrictHostKeyChecking=no graphql-client-c <<EOF
  cd ~/indiv-comment-box
  git pull
  sudo npm install
