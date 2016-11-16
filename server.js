@@ -12,7 +12,7 @@ const headers = {
   'Accept': 'application/json'
 };
 const client = new Lokka({
-  transport: new Transport('http://54.183.27.114:8080', {
+  transport: new Transport('http://52.52.196.246:8080', {
     headers
   })
 });
